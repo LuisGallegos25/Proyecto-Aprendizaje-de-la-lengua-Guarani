@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="p-3 mb-2 bg-warning text-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Lecciones
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="alfabeto.html">El Alfabeto</a>
+                <a class="dropdown-item" href="saludos.html">Los Saludos</a>
+                <a class="dropdown-item" href="colores.html">Los colores</a>
+                <a class="dropdown-item" href="pronombres.html">Los pronombres</a>
+                <a class="dropdown-item" href="numeros.html">Los numeros</a>
+                <a class="dropdown-item" href="familia.html">La familia</a>
+                <a class="dropdown-item" href="cuerpo.html">Cuerpo humano</a>
+                <a class="dropdown-item" href="animales.html">Los animales</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning" type="submit">Search</button>
+          </form>
+        </nav>
+      </nav>
+
+    <div class="jumbotron"
+        style="background-image: url(imagenes/familia1.jpg) ; background-size: cover ; width: 100%; height: auto; color: orange; ">
+
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+
+    <div class="container">
+        <hr style="border-color:white;">
+        <h1><span>L</span><span>A</span>&nbsp;<span>F</span><span>A</span><span>M</span><span>I</span><span>L</span><span>I</span><span>A</span>
+        </h1>
+        <hr style="border-color:white;">
+
+        <div class="row">
+
+            <div class="col-sm">
+                <div class="card" style="width: 17rem;">
+                    <img class="card-img-top" alt="Responsive image"
+                        src="imagenes/familia/papa esposo.jpeg">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Papá</h5>
+                        <p class="card-text">Ru</p>
+                        <button onclick="playpapa()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                    <path
+                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                    <path
+                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                </svg></button></center>
+                        <audio id="papa">
+                            <source src="audios/familia/papá.mp3" type="audio/mp3">
+                        </audio>
+                        <script>
+                            var audiopapa = document.getElementById("papa");
+
+                            function playpapa() {
+                                    audiopapa.play();
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 17rem;">
+                    <img class="card-img-top" alt="Responsive image"
+                        src="imagenes/familia/esposa mama.jpeg">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Mamá</h5>
+                        <p class="card-text">Sɨ</p>
+
+                        <button onclick="playmama()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                    <path
+                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                    <path
+                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                </svg></button></center>
+                        <audio id="mama">
+                            <source src="audios/familia/mamá.mp3" type="audio/mp3">
+                        </audio>
+                        <script>
+                            var audiomama = document.getElementById("mama");
+
+                            function playmama() {
+                                    audiomama.play();
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 17rem;">
+                    <img class="card-img-top" alt="Responsive image"
+                        src="imagenes/familia/esposo.jpg">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Esposo</h5>
+
+                        <p class="card-text">Me</p>
+                        <button onclick="playesposo()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                    <path
+                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                    <path
+                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                </svg></button></center>
+                        <audio id="esposo">
+                            <source src="audios/familia/esposo.mp3" type="audio/mp3">
+                        </audio>
+                        <script>
+                            var audioesposo = document.getElementById("esposo");
+
+                            function playesposo() {
+                                    audioesposo.play();
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 17rem;">
+                    <img class="card-img-top" alt="Responsive image"
+                        src="imagenes/familia/esposa.jpg">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Esposa</h5>
+                            <p class="card-text">Tembireko</p>
+
+                        <button onclick="playesposa()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                    <path
+                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                    <path
+                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                </svg></button></center>
+                        <audio id="esposa">
+                            <source src="audios/familia/esposa.mp3" type="audio/mp3">
+                        </audio>
+                        <script>
+                            var audioesposa = document.getElementById("esposa");
+
+                            function playesposa() {
+                                    audioesposa.play();
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+<br>
+        <div class="row">
+
+            <div class="col-sm">
+                <div class="card" style="width: 17rem;">
+                    <img class="card-img-top" alt="Responsive image"
+                        src="imagenes/familia/hijo hermano.jpeg">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Hijo</h5>
+                            <p class="card-text">Raɨ</p>
+                        <button onclick="playhijo()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                    <path
+                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                    <path
+                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                </svg></button></center>
+                        <audio id="hijo">
+                            <source src="audios/familia/hijo.mp3" type="audio/mp3">
+                        </audio>
+                        <script>
+                            var audiohijo = document.getElementById("hijo");
+
+                            function playhijo() {
+                                    audiohijo.play();
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 17rem;">
+                    <img class="card-img-top" alt="Responsive image"
+                        src="imagenes/familia/hija hermana.jpeg">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Hija</h5>
+                        <p class="card-text">Rayi</p>
+
+                        <button onclick="playhija()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                    <path
+                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                    <path
+                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                </svg></button></center>
+                        <audio id="hija">
+                            <source src="audios/familia/hija.mp3" type="audio/mp3">
+                        </audio>
+                        <script>
+                            var audiohija = document.getElementById("hija");
+
+                            function playhija() {
+                                    audiohija.play();
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 17rem;">
+                    <img class="card-img-top" alt="Responsive image"
+                        src="imagenes/familia/abuelo.jpeg">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Abuelo</h5>
+                        <p class="card-text">Ramui</p>
+
+                        <button onclick="playabuelo()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                    <path
+                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                    <path
+                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                </svg></button></center>
+                        <audio id="abuelo">
+                            <source src="audios/familia/abuelo.mp3" type="audio/mp3">
+                        </audio>
+                        <script>
+                            var audioabuelo = document.getElementById("abuelo");
+
+                            function playabuelo() {
+                                    audioabuelo.play();
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 17rem;">
+                    <img class="card-img-top" alt="Responsive image"
+                        src="imagenes/familia/abuela.jpeg">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Abuela</h5>
+                            <p class="card-text">Yarɨ</p>
+                
+                        <button onclick="playabuela()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="bi bi-volume-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                    <path
+                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                    <path
+                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                </svg></button></center>
+                        <audio id="abuela">
+                            <source src="audios/familia/abuela.mp3" type="audio/mp3">
+                        </audio>
+                        <script>
+                            var audioabuela = document.getElementById("abuela");
+
+                            function playabuela() {
+                                    audioabuela.play();
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+
+        <br>
+        <hr style="border-color:white;">
+        <a href="numeros.html" class="btn btn-light">Volver</a>
+        <a href="cuerpo.html" class="btn btn-light">Siguiente Leccion</a>
+        
+        
+
+
+
+    </div>
+</body>
+
+</html>
